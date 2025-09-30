@@ -25,6 +25,9 @@
         <action
             android:id="@+id/select_date"
             app:destination="@id/datePickerFragment" />
+        <action
+            android:id="@+id/lookat_image"
+            app:destination="@id/detailImageFragment" />
     </fragment>
     <dialog
         android:id="@+id/datePickerFragment"
@@ -34,4 +37,8 @@
             android:name="crimeDate"
             app:argType="java.util.Date" />
     </dialog>
+    <dialog
+        android:id="@+id/detailImageFragment"
+        android:name="com.bignerdranch.android.criminalintent.DetailImageFragment"
+        android:label="DetailImageFragment" />
 </navigation>
